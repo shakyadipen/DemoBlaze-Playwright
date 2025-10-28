@@ -44,7 +44,7 @@ test('Test Complete user flow-login-addtocart-logout', async ({ page }) => {
 
       //logout 
       //await page.waitForTimeout(3000);
-      //expect(await logout.isLogoutVisible({timeout:800000}));
+      expect(await logout.isLogoutVisible({timeout:800000}));
       await logout.gotoLogoutLink();
       expect(await logout.isLoginVisible()).toBeTruthy();
 
